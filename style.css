@@ -1,0 +1,114 @@
+body {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.wprapper-macbook {
+	padding: 20px 10px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.macbook {
+	list-style: none;
+	margin: 0 10px;
+	padding: 10px;
+	border: 1px solid grey;
+}
+.close-icon {
+	display: none;
+}
+.closeIconShow {
+	display: block;
+	text-align: right;
+	width: 100%;
+	cursor: pointer;
+}
+.macbook:hover {
+	box-shadow: 3px 3px 5px 6px #ccc;
+}
+.price {
+	font-size: 30px;
+}
+.make_order {
+	width: 170px;
+	text-transform: uppercase;
+}
+.make_order:hover {
+	border: 1px solid orange;
+	background: #fff;
+}
+.macbook__footer {
+	display: flex;
+	align-item: center;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+// #tra{
+// 	display: none;
+// }
+.macbookFooterShow {
+	display: flex;
+	align-item: center;
+	justify-content: center;
+	display: none;
+	margin: 15px 0 30px;
+}
+.amount__input {
+	width: 35px;
+}
+#finish__order {
+	margin-left: 10px;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+}
+#finish__order:hover {
+	border: 1px solid orange;
+	background: #fff;
+	margin-left: 10px;
+}
+.counter-order {
+	display: none;
+}
+.counterOrderShow {
+	display: block;
+    height: 100%;
+    max-width: 30%;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+}
+.counterOrderShow > .macbook__header > img {
+	width: 100%;
+}
+.counterOrderShow > .macbook__footer {
+	display: none;
+}
+
+
+.disabled {
+  opacity: 0.65; 
+  cursor: not-allowed;
+ }
+
+
+
+
+ .imputMy {
+ 	max-width: 150px;
+ }
+ .minus, .plus {
+ 	cursor: pointer;
+ 	text-decoration: none;
+ }
+.minus:hover {
+	text-decoration: none;
+}
+.plus:hover {
+	text-decoration: none;
+}
+ .close_icon {
+ 	cursor: pointer;
+ 	color: red!important;
+ }

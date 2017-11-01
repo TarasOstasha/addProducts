@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>prog</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+<body>
+	
+	<div class="counter-order">
+		<span>ваш заказ</span>
+		<div class="your__order"></div>
+	</div>
+	<ul class="wprapper-macbook">
+		<!-- first order -->
+		<li class="macbook">
+			<header class="macbook__header">
+				<div class="close-icon" onclick="shutIcon();">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</div>
+				
+				<img src="images/MacBook-Pro.png" alt="">
+			</header>
+			<article class="macbook__article">
+				<h1>MacBook Pro</h1>
+				<p>Apple 15" MacBook Pro, Retina, Touch Bar, 2.9GHz Intel 		Core i7 Quad Core, 16GB RAM, 512GB SSD, Space Gray
+				</p>
+			</article>
+			<footer class="macbook__footer">
+				<div class="price">
+					2600$
+				</div>
+				<button id="BtnOrder" class="make_order" onclick="buyOrder(2600,1,'macbook1')">
+					<i class="fa fa-money" aria-hidden="true"></i>
+					оформить заказ
+				</button>
+			</footer>
+			<footer class="macbookFooterShow">
+				<div class="footer__amount">
+					<button type="button" onclick="counterChange(+1)">
+						<i class="fa fa-plus" aria-hidden="true"></i>
+					</button>
+					<input type="text" class="amount__input" id="myInput" value="0">
+					<button type="button" onclick="counterChange(-1)" id="btnMinus">
+						<i class="fa fa-minus" aria-hidden="true"></i>
+					</button>
+					<br>
+					<p class="view__price"></p>
+				</div>
+				<button id="finish__order" onclick="subminOrder()">
+					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+					заказать
+				</button>
+			</footer>
+		</li>
+		<!-- second order -->
+		<li class="macbook">
+			<header class="macbook__header">
+				<div class="close-icon" onclick="shutIcon();">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</div>
+				
+				<img src="images/MacBook-Pro.png" alt="">
+			</header>
+			<article class="macbook__article">
+				<h1>MacBook Pro</h1>
+				<p>Apple 15" MacBook Pro, Retina, Touch Bar, 2.9GHz Intel 		Core i7 Quad Core, 16GB RAM, 512GB SSD, Space Gray
+				</p>
+			</article>
+			<footer class="macbook__footer">
+				<div class="price">
+					2600$
+				</div>
+				<button id="BtnOrder" class="make_order" onclick="buyOrder(2600,2,'macbook2')">
+					<i class="fa fa-money" aria-hidden="true"></i>
+					оформить заказ
+				</button>
+			</footer>
+			<footer class="macbookFooterShow">
+				<div class="footer__amount">
+					<button type="button" onclick="counterChange(+1)">
+						<i class="fa fa-plus" aria-hidden="true"></i>
+					</button>
+					<input type="text" class="amount__input" id="myInput" value="0">
+					<button type="button" onclick="counterChange(-1)" id="btnMinus">
+						<i class="fa fa-minus" aria-hidden="true"></i>
+					</button>
+					<br>
+					<p class="view__price"></p>
+				</div>
+				<button id="finish__order" onclick="subminOrder()">
+					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+					заказать
+				</button>
+			</footer>
+		</li>
+		<!-- third order -->
+		<li class="macbook">
+			<header class="macbook__header">
+				<div class="close-icon" onclick="shutIcon();">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</div>
+				
+				<img src="images/MacBook-Pro.png" alt="">
+			</header>
+			<article class="macbook__article">
+				<h1>MacBook Pro</h1>
+				<p>Apple 15" MacBook Pro, Retina, Touch Bar, 2.9GHz Intel 		Core i7 Quad Core, 16GB RAM, 512GB SSD, Space Gray
+				</p>
+			</article>
+			<footer class="macbook__footer">
+				<div class="price">
+					2600$
+				</div>
+				<button id="BtnOrder" class="make_order" onclick="buyOrder(2600,3,'macbook3')">
+					<i class="fa fa-money" aria-hidden="true"></i>
+					оформить заказ
+				</button>
+			</footer>
+			<footer class="macbookFooterShow">
+				<div class="footer__amount">
+					<button type="button" onclick="counterChange(+1)">
+						<i class="fa fa-plus" aria-hidden="true"></i>
+					</button>
+					<input type="text" class="amount__input" id="myInput" value="0">
+					<button type="button" onclick="counterChange(-1)" id="btnMinus">
+						<i class="fa fa-minus" aria-hidden="true"></i>
+					</button>
+					<br>
+					<p class="view__price"></p>
+				</div>
+				<button id="finish__order" onclick="subminOrder()">
+					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+					заказать
+				</button>
+			</footer>
+		</li>
+	</ul>
+<script src=main.js></script>	
+</body>
+</html>
