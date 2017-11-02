@@ -2,16 +2,21 @@
   var product = document.getElementsByClassName('macbook')[0];
   var counterOrder = document.getElementsByClassName('counter-order')[0];
   var yourOrder = document.getElementsByClassName('your__order')[0];
-  var mainAllCount = 0;
-  var myChanges = 0;
+  var mainAllCount = 0; //змінна куди заносяться загальна кількість продуктів
+  var myChanges = 0;//змінна куди заносяться всі додавання та видалення основних продуктів(великих)
+  //var myChangesAdd = 0;
    function buyOrder(x,y,z) {
       //console.log(x);
       var orderDiv = "<div>" + z + ' ' + "<a class='minus' id='minus' onclick='minus("+ x +",this)'> - </a><input class='imputMy' id='myInput' value ='1' type='text'><a class='plus' onclick='plus("+ x +",this)'> + </a>" + y + ' ' + "<span>" + x + "</span>" + "<i class='fa fa-times close_icon' aria-hidden='true' onclick='delProduct(this)'></i>" + '<span>' + '</span>' + "</div>";
       mainAllCount = mainAllCount + 1;
-      console.log(myChanges);
       yourOrder.innerHTML = yourOrder.innerHTML + orderDiv;
       counterOrder.classList.add('counterOrderShow');
       window.scrollTo(0,0);
+      
+      //myChangesAdd = myChangesAdd + el.parentNode.parentNode.parentNode.previousElementSibling;
+      myChanges = myChanges+ x;
+      changeDiv.innerHTML = myChanges;
+      console.log(myChanges);
    }
     
    //function minus product
@@ -45,24 +50,24 @@
     //додавання всіх цін в одну
     //сумарна кількість продуктів
     //при видаленні та додаванні продукта ціна  щоб змінювалась 
-    
+     
   }
 
   function delProduct(el) {
+
     //console.log(el.previousElementSibling.innerHTML);
     el.parentNode.remove(); //видалення поточного діва продукту
     mainAllCount = mainAllCount - 1; //перемінна куди заноситься загально весь товар і тут при кожному закритті іконки буде віднімати товар
     myChanges = myChanges - el.previousElementSibling.innerHTML;
-    var changeDiv = document.getElementsByClassName('myallCount')[0]; //загальна змінна куди будуть виводитись загальна сума віднімання
-    changeDiv.innerHTML = myChanges;
-    console.log(myChanges);
+    // var changeDiv = document.getElementsByClassName('myallCount')[0]; //загальна змінна куди будуть виводитись загальна сума віднімання
+    changeDiv.innerHTML = myChanges;//додавання нашої суми в html
     if(mainAllCount == 0) { //якщо не залишилось товарів, то видаляти останній блок
       counterOrder.classList.remove('counterOrderShow');
     }
     //написати логіку коли видалений останній елемент то видаляти весь блок
   }        
 
-
+var changeDiv = document.getElementsByClassName('myallCount')[0];
 
 // }
 
