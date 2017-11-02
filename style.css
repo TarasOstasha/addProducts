@@ -96,7 +96,7 @@ body {
 
 
  .imputMy {
- 	max-width: 150px;
+ 	max-width: 30px;
  }
  .minus, .plus {
  	cursor: pointer;
@@ -112,3 +112,4 @@ body {
  	cursor: pointer;
  	color: red!important;
  }
+
